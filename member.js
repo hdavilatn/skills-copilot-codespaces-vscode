@@ -1,4 +1,4 @@
-function skillsMenbers() {
+function skillsMembers() {
   return [
     { name: 'John', skills: ['JavaScript', 'React', 'Node'] },
     { name: 'Alex', skills: ['JavaScript', 'React', 'Node'] },
