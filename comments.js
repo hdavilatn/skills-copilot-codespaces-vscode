@@ -1,7 +1,15 @@
-//Function to sum thow numbers
-function sum(a, b) {
-    return a + b;
-}
+//Create web server
+const express = require('express');
+const app = express();
+const port = 3000;
+const comments = require('./comments');
 
-//Export the function
-module.exports = sum;
+//Route to handle comments
+app.get('/comments', (req, res) => {
+  res.json(comments);
+});
+
+//Start the server
+app.listen(port, () => {
+  console.log(`Server started on http://localhost:${port}`);
+});
